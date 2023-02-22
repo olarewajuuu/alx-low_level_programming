@@ -1,19 +1,21 @@
-#include "putchar.c
+#include "main.h"
+
 /**
- * main - Entry point
+ * main - Entr point
  *
- * Return: Always 0 (Success)
+ * Description: A program that prints _putchar followed by a new line
+ *
+ * Return: Always 0 (success)
  */
 int main(void)
 {
-	char *sh = "putchar";
+	char text[8] = "_putchar";
+	int i = 0;
 
-	while (*sh)
+	for (i = 0; i < 8; i++)
 	{
-		_putchar(*sh);
-		sh++;
+		_putchar(text[i]);
 	}
 	_putchar('\n');
-
 	return (0);
 }
